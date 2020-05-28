@@ -1,60 +1,13 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'youtube/base.html' %}
 
-<head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>Shop Homepage - Start Bootstrap Template</title>
-
-  <!-- Bootstrap core CSS -->
-  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}"  rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="{% static 'css/shop-homepage.css' %}" rel="stylesheet">
-
-</head>
-
-<body>
-
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">Youtubeまとめサイト</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+{% block content %}
 
   <!-- Page Content -->
-  <div class="container">
+  <div class="container-fluid">
 
     <div class="row">
 
-      <div class="col-lg-3">
+      <div class="col-lg-2">
 
         <h1 class="my-4">Yotube Category</h1>
         <div class="list-group">
@@ -66,7 +19,7 @@
       </div>
       <!-- /.col-lg-3 -->
 
-      <div class="col-lg-9">
+      <div class="col-lg-10">
 
         <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
           <ol class="carousel-indicators">
@@ -99,19 +52,19 @@
 
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
-              
-              <div class="youtube-movie-wrap"><iframe width="500  " height="360" src="https://www.youtube.com/embed/FuXNumBwDOM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
-                <amp-youtube data-videoid="FuXNumBwDOM" width="800" height="450" layout="responsive"></amp-youtube>
-              
-                <iframe width="600" height="300" src="https://www.youtube.com/embed/FuXNumBwDOM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
-
-              <a href="https://www.youtube.com/watch?v=7HekTtP5LK0"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+              <iframe  src="https://www.youtube.com/embed/cmzdV4i9tuk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
               <div class="card-body">
                 <h4 class="card-title">
-                  <a href="#">you&I (IU)</a>
+                  <a>コーギー犬ノエさん</a>
                 </h4>
-                <h5>$24.99</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                <h5>登録者数：12万人</h5>
+                <p class="card-text">ウェルッシュコーギーのノエルです
+                  男の子だよ！
+                  ノエさんって呼ばれてます
+                  よろしくね♡
+                  The name is Noel.
+                  Corgi boy.
+                  I live in Hokkaido, Japan</p>
               </div>
               <div class="card-footer">
                 <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
@@ -119,7 +72,7 @@
             </div>
           </div>
 
-          <!-- <div class="col-lg-4 col-md-6 mb-4">
+          <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
               <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
               <div class="card-body">
@@ -197,7 +150,7 @@
                 <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
               </div>
             </div>
-          </div> -->
+          </div>
 
         </div>
         <!-- /.row -->
@@ -210,19 +163,5 @@
 
   </div>
   <!-- /.container -->
+  {% endblock %}
 
-  <!-- Footer -->
-  <footer class="py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
-    </div>
-    <!-- /.container -->
-  </footer>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="{% static 'vendor/jquery/jquery.min.js' %]"></script>
-  <script src="{% vendor/bootstrap/js/bootstrap.bundle.min.js' %]></script>
-
-</body>
-
-</html>

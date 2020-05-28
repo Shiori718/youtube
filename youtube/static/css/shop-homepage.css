@@ -4,5 +4,27 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-shop-homepage/blob/master/LICENSE)
  */
 body {
-  padding-top: 56px;
+  padding-top: 56px; /*! page-headerとの距離 */
+  font-family: 'Lucida Console',sans-serif;
 }
+
+.card-title a {
+  color: #3c0ee6;
+  font-size: 15pt;
+  text-decoration: none;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  padding: calc(315 / 560 * 100%) 0 0;
+}
+
+.card iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 33%;
+}
+
